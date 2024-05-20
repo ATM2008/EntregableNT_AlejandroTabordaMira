@@ -7,12 +7,10 @@ while i < campos:
     producto.append(valor)
     i+=1
 
-for item in producto:
-    print(item)
-
-
 encabezados = ("Id","Nombre","Precio","Cantidad","Categoria")
 
+for encabezado in encabezados:
+    print(encabezado, end="\t")
+print()
 for item in producto:
-    for tag in encabezados:
-        print(tag, item)
+    print(item, end= "\t" )
